@@ -1,0 +1,43 @@
+
+.navbar {
+    background-color: whitesmoke;
+    padding: 25px;
+}
+
+.navbar-ul {
+    display: flex; 
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-1 {
+    display: flex; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.navbar-2 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.active {
+    color: green;
+}
+
+.navbar-logo {
+    width: 50px;
+}
+
+.navbar-flex-btn {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+

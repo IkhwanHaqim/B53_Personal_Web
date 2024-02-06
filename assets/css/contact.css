@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.text h1 {
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.label-style {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.input-style {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.input-area {
+    resize: none;
+    height: 100px;
+}
+
+.btn-submit {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 260px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
