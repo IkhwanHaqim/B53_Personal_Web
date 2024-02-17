@@ -79,6 +79,7 @@
     height: 100px;
     border-radius: 5px;
     position: relative;
+    padding: 5px;
 }
 
 .form .technologies-box {
@@ -217,7 +218,7 @@
 
 .card .content {
     margin-bottom: 1rem;
-    width: 250px;
+    width: 320px;
     word-wrap: break-word;
 }
 
