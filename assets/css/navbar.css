@@ -24,7 +24,11 @@
 }
 
 .active {
-    color: green;
+    color: rgb(13, 209, 226);
+}
+
+.humberger-active {
+    background-color:  rgb(13, 209, 226);
 }
 
 .navbar-logo {
@@ -40,4 +44,47 @@
     text-decoration: none;
 }
 
+#humberger-btn {
+    display: none;
+}
+
+.humberger-container {
+    display: flex; 
+    flex-direction: column; 
+    background-color: gray;
+}
+
+.humberger {
+    display: none;
+    width: 100%; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px; 
+    text-decoration: none; 
+    border: 1px solid;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Bagian Smartfone */
+@media only screen and (max-width: 576px) {
+
+    .navbar-2 {
+        display: none;
+    }
+
+    .navbar-flex-btn {
+        display: none;
+    }
+
+    .humberger {
+        display: block;
+    }
+
+    #humberger-btn {
+        display: block;
+    }
+}
 

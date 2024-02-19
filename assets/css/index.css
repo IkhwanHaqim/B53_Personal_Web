@@ -86,3 +86,34 @@
     margin-top: 5px;
 }
 
+/* bagian smartfone */
+@media only screen and (max-width: 576px) {
+
+    .container {
+        flex-direction: column;
+        height: 1100px;
+    }
+
+    .content {
+        width: 95%;
+        padding: 2rem 0rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 18rem;
+        height: 27rem;
+        margin-top: 10px;
+    }
+}

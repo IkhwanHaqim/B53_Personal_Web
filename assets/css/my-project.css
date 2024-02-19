@@ -240,3 +240,43 @@
     background-color: black;
     color: rgb(13, 209, 226);
 }
+
+/* Bagian Smartfone */
+@media only screen and (max-width: 576px) {
+    
+    .container form {
+        width: 40px;
+    }
+
+    .form .column {
+        flex-direction: column;
+    }
+
+    .label-box .input-style {
+        width: 320px;
+    }
+
+    .text-box .input-area {
+        width: 333px;
+    }
+
+    .input-project {
+        width: 330px;
+    }
+
+    .btn-submit {
+        margin-left: 250px;
+    }
+
+    .mainproject .card-container {
+        padding: 0rem 0rem;
+        width: 50%;
+        gap: 2rem;
+    }
+
+    .card {
+        align-items: center;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

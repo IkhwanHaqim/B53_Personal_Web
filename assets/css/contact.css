@@ -52,3 +52,20 @@
     cursor: pointer;
 }
 
+/* bagian smartfone */
+@media only screen and (max-width: 576px) {
+
+    .container {
+        margin: auto;
+        padding: 0;
+    }
+
+    .form {
+        width: 320px;
+    }
+
+    .btn-submit {
+        margin-bottom: 20px;
+        margin-left: 220px;
+    }
+}

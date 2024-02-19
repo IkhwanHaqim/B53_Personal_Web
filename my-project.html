@@ -15,22 +15,28 @@
 <nav class="navbar">
     <ul class="navbar-ul">
         <div class="navbar-1">
-             <li>
+            <li>
                 <img src="./assets/img/dumbways.png" class="navbar-logo">
             </li>
             <li>
                 <a href="index.html" class="navbar-2">Home</a>
             </li>
             <li>
-                <a href="my-project.html" class="navbar-2 active">My Project</a>
-            </li>
+              <a href="my-project.html" class="navbar-2 active">My Project</a>
+          </li>
         </div>
         <div>
             <li>
                 <a href="contact-me.html" class="navbar-flex-btn">Contact Me</a>
             </li>
+            <i class="fa-solid fa-bars fa-2x" id="humberger-btn" style="cursor: pointer;" onclick="openHumberger()"></i>
         </div>
     </ul>
+    <div id="humberger-container" class="humberger-container hidden">
+        <a class="humberger" href="index.html">Home</a>
+        <a class="humberger humberger-active"  href="my-project.html">My Project</a>
+        <a class="humberger"  href="contact-me.html">Contact Me</a>
+    </div>
 </nav> 
 
 <!-- Content -->
@@ -120,5 +126,6 @@
 
 </section>
 <script src="./assets/js/my-project.js"></script>
+<script src="./assets/js/nav.js"></script>
 </body>
 </html>
