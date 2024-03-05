@@ -16,18 +16,18 @@
                     <img src="./assets/img/dumbways.png" class="navbar-logo">
                 </li>
                 <li>
-                    <a href="index.html" class="navbar-2">Home</a>
+                    <a href='/index' class="navbar-2 active">Home</a>
                 </li>
                 <li>
-                  <a href="my-project.html" class="navbar-2">My Project</a>
-               </li>
-               <li>
-                <a href="testimonial.html" class="navbar-2 active">My Testimonial</a>
-               </li>
+                  <a href='/my-project' class="navbar-2">My Project</a>
+              </li>
+              <li>
+                <a href='/testimonial' class="navbar-2">My Testimonial</a>
+            </li>
             </div>
             <div>
                 <li>
-                    <a href="contact-me.html" class="navbar-flex-btn">Contact Me</a>
+                    <a href='/contact' class="navbar-flex-btn">Contact Me</a>
                 </li>
                 <i class="fa-solid fa-bars fa-2x" id="humberger-btn" style="cursor: pointer;" onclick="openHumberger()"></i>
             </div>
@@ -43,6 +43,27 @@
         <div class="judul">
             <h1>My Testimonial</h1>
         </div>
+        <div class="rating">
+            <h2>Rating By Star</h2>
+            <div class="rating1">
+                <button class="rating-btn" onclick="allTestimonial()">All</button>
+                <button class="rating-btn" onclick="filterTestimonial(1)">
+                   1 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(2)">
+                   2 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(3)">
+                   3 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(4)">
+                   4 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(5)">
+                   5 <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
+        </div>
         <div class="card-container" id="testimonials">
             <!-- <div class="testimonial">
                 <img src="assets/img/prince.jpg" alt="">
@@ -52,5 +73,5 @@
     </section>
         
     <script src="./assets/js/nav.js"></script>
-    <script src="./assets/js/testimonial.js"></script>
+    <script src="./assets/js/ajax.js"></script>
 </html>

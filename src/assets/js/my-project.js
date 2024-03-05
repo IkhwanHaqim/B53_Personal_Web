@@ -43,12 +43,30 @@ function addBlog(e) {
 
 function renderBlog() {
     let html = ''
-
+    
     for(let index = 0; index < blogs.length; index++) {
+        let renderTechIcons = ''
+
+        if(blogs[index].nodejs) {   
+            renderTechIcons += `<i class="fa-brands fa-node-js"></i>` 
+        }
+
+        if(blogs[index].reactjs) {   
+            renderTechIcons += `<i class="fa-brands fa-react"></i>`
+        }
+
+        if(blogs[index].angular) {   
+            renderTechIcons += `<i class="fa-brands fa-angular"></i>`
+        }
+
+        if(blogs[index].vuejs) {   
+            renderTechIcons += `<i class="fa-brands fa-vuejs"></i>`
+        }
+
         html += `
         <div class="card">
             <img src="./assets/img/tiger.jpg" class="card-image" />
-            <a href="project-detail.html" target="_blank">${blogs[index].name} </a>
+            <a href="project-detail" target="_blank">${blogs[index].name} </a>
         <div class="duration">
         Duration: ${blogs[index].duration} day
         </div>
@@ -56,10 +74,7 @@ function renderBlog() {
             ${blogs[index].content}
         </p>
             <p class="icon-card">
-            ${blogs[index].nodejs ? `<i class="fa-brands fa-node-js"></i>` : ''}
-            ${blogs[index].reactjs ? `<i class="fa-brands fa-react"></i>` : ''}
-            ${blogs[index].angular ? `<i class="fa-brands fa-angular"></i>` : ''}
-            ${blogs[index].vuejs ? `<i class="fa-brands fa-vuejs"></i>` : ''}
+              ${renderTechIcons}
             </p>
         <div class="btn-card">
             <button>Edit</button>
